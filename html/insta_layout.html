@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Work Sans", sans-serif;
+      }
+
+      .container {
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 70%;
+        width: 30%;
+        border: 2px solid black;
+      }
+
+      #inner-box-1 {
+        height: 70%;
+        border: 2px solid red;
+      }
+
+      #inner-box-2 {
+        height: 10%;
+        border: 2px solid green;
+      }
+      #inner-box-3 {
+        height: 20%;
+        border: 2px solid yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        height: 20%;
+        border: 2px dashed black;
+        text-align: center;
+      }
+
+      .form {
+        height: 50%;
+        border: 2px dashed green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      input {
+        padding: 10px;
+        margin: 5px;
+      }
+
+      input[type="submit"]{
+
+           background-color: rgb(0, 149, 246);
+           border: none;
+           border-radius: 7px;
+           color: white;
+           font-weight: bold;
+      }
+
+      .links {
+        height: 30%;
+        border: 2px dashed blue;
+        text-align: center;
+        position: relative;
+      }
+
+      .inner-box div {
+        width: 70%;
+        margin: auto;
+      }
+
+      .logo img {
+        width: 80%;
+        height: 100%;
+      }
+
+      #inner-box-3 img {
+        height: 50%;
+        width: 45%;
+        margin: 3px;
+      }
+
+      .or::before {
+        content: "";
+        border: 1px solid black;
+        width: 40%;
+        position: absolute;
+        left: 7px;
+        top: 8px;
+      }
+
+      .or::after {
+        content: "";
+        border: 1px solid black;
+        width: 40%;
+        position: absolute;
+        right: 7px;
+        top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is <span style="color: red"> my</span> container</h1>
+
+    <div class="container">
+      <div class="box"></div>
+      <div class="box">
+        <div class="inner-box" id="inner-box-1">
+          <div class="logo">
+            <img src="insta.png" alt="" />
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              placeholder="username,phone number email address"
+            />
+            <input type="text" placeholder="password" />
+            <input type="submit" value="Log in" />
+          </div>
+          <div class="links">
+            <div class="or">OR</div>
+          </div>
+        </div>
+        <div class="inner-box" id="inner-box-2"></div>
+        <div class="inner-box" id="inner-box-3">
+          <img
+            src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png"
+            alt=""
+          />
+          <img
+            src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

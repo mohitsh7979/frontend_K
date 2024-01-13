@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .header {
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        padding: 15px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+        margin: 10px 20px;
+      }
+
+      .main {
+        background: url("car.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+
+      }
+
+      p{
+
+        letter-spacing: 5px;
+        margin-top: 50px;
+    
+      }
+
+      button{
+
+        padding: 15px 30px;
+        background-color: rgb(78, 78, 251);
+        border: none;
+        color: white;
+        margin: 30px;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <h1>CARVILIA</h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Featured Cars</li>
+          <li>New Cars</li>
+          <li>Brands</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          voluptates culpa repellat <br> doloremque magni molestias impedit
+          perferendis, numquam officiis quam.
+        </p>
+
+        <button>Contact Us</button>
+
+    </div>
+  </body>
+</html>
