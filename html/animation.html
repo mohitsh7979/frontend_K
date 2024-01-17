@@ -14,6 +14,11 @@
       body{
 
         /* background-color: black; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh
       }
 
       .container {
@@ -22,15 +27,47 @@
         border: 2px solid black;
         /* animation: box 2s infinite; */
         position: relative;
-        animation-name: box;
-        animation-duration: 5s;
+        /* transition-property: background-color,border-radius,height;
+        transition-duration: 3s; */
+
+        transition: all 1s ease-in;
+   
+        /* animation-name: box;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
-        position: relative;
+        animation-timing-function: ease-out; */
+        /* position: relative; */
        
       }
 
-      @keyframes box {
+      .container:hover{
+        
+
+          background-color: yellow;
+          cursor: pointer;
+          border-radius: 200px;
+          width: 700px;
+          transform: rotate(90deg);
+
+          }
+
+      /* @keyframes box {
+
+        0%{
+
+            display: none;
+            opacity: 0.2;
+            width: 0px;
+
+        }
+
+        25%{
+
+            display: block;
+            opacity: 1;
+            width: 100px;
+
+        } */
       /*  from {
 
             width: 0px;
@@ -49,7 +86,7 @@
             left: 800px;
         } */ 
 
-        0%{
+      /*  0%{
 
             left: 0px;
             top: 0px;
@@ -107,12 +144,12 @@
             
 
 
-        } 
+        } */
       }
     </style>
   </head>
   <body>
-    <div class="container"></div>
+    <h1 class="container"></h1>
     <!-- <div class="container"></div> -->
   </body>
 </html>
